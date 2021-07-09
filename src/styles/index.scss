@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap.scss";
-.traffic-light{
+.traffic{
     background: black;
     padding: 5px;
     display: inline-block;
@@ -7,16 +7,13 @@
 .light{
     height: 100px;
     width: 100px;
-    background-color: blue;
     border-radius: 50%;
 }
 .green{
     background: green;
-    padding-bottom: 2px;
 }
 .yellow{
     background: yellow;
-    padding-bottom: 2px;
 }
 .red{
     background: red;

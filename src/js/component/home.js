@@ -2,24 +2,24 @@ import React, { useState } from "react";
 
 //create your first component
 export function Home() {
-	const [selectedColor, setSelectedColor] = useState("green");
+	const [selectedColor, setSelectedColor] = useState("");
 
 	return (
-		<div className="traffic-light">
+		<div className=" traffic">
 			<div
-				onclick={() => setSelectedColor("green")}
-				class={
-					"light green" + (selectedColor === "green" ? "glow" : "")
+				onClick={() => setSelectedColor("green")}
+				className={
+					"light green" + (selectedColor === "green" ? " glow" : "")
 				}></div>
 			<div
-				onclick={() => setSelectedColor("yellow")}
-				class={
-					"light yellow" + (selectedColor === "yellow" ? "glow" : "")
+				onClick={() => setSelectedColor("yellow")}
+				className={
+					"light yellow" + (selectedColor === "yellow" ? " glow" : "")
 				}></div>
 			<div
-				onclick={() => setSelectedColor("red")}
-				class={
-					"light red" + (selectedColor === "red" ? "glow" : "")
+				onClick={() => setSelectedColor("red")}
+				className={
+					"light red" + (selectedColor === "red" ? " glow" : "")
 				}></div>
 		</div>
 	);
